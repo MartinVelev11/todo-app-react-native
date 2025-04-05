@@ -66,7 +66,7 @@ const TodoDetailScreen = ({ route, navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'transparent',
   },
   content: {
     flex: 1,
@@ -76,16 +76,18 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 8,
+    color: '#fff',
   },
   time: {
     fontSize: 16,
-    color: '#666',
+    color: '#ccc',
     marginBottom: 16,
   },
   description: {
     fontSize: 18,
     lineHeight: 24,
     marginBottom: 16,
+    color: '#fff',
   },
   status: {
     fontSize: 18,
@@ -93,7 +95,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     padding: 16,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(0, 0, 51, 0.7)',
     elevation: 2,
   },
   button: {

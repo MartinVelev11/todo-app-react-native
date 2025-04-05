@@ -48,6 +48,8 @@ const CreateTodoScreen = ({ navigation }) => {
           value={title}
           onChangeText={setTitle}
           placeholder="Enter todo title"
+          placeholderTextColor="#aaa"
+          color="#fff"
         />
       </View>
 
@@ -58,6 +60,8 @@ const CreateTodoScreen = ({ navigation }) => {
           value={text}
           onChangeText={setText}
           placeholder="Enter todo description"
+          placeholderTextColor="#aaa"
+          color="#fff"
           multiline
           numberOfLines={4}
         />
@@ -81,6 +85,7 @@ const CreateTodoScreen = ({ navigation }) => {
           mode="datetime"
           display="default"
           onChange={onDateChange}
+          textColor="#fff"
         />
       )}
 
@@ -98,7 +103,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'transparent',
   },
   inputContainer: {
     marginBottom: 16,
@@ -107,27 +112,30 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 8,
+    color: '#fff',
   },
   input: {
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(0, 0, 51, 0.7)',
     padding: 12,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: '#444',
+    color: '#fff',
   },
   textArea: {
     height: 100,
     textAlignVertical: 'top',
   },
   dateButton: {
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(0, 0, 51, 0.7)',
     padding: 12,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: '#444',
   },
   dateButtonText: {
     fontSize: 16,
+    color: '#fff',
   },
   submitButton: {
     backgroundColor: '#4CAF50',

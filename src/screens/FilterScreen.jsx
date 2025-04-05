@@ -94,17 +94,18 @@ const FilterScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'transparent',
   },
   filterSection: {
     padding: 16,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(0, 0, 51, 0.7)',
     elevation: 2,
   },
   sectionTitle: {
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 8,
+    color: '#fff',
   },
   filterButtons: {
     flexDirection: 'row',
@@ -136,7 +137,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   todoItem: {
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(0, 0, 51, 0.7)',
     padding: 16,
     marginVertical: 4,
     borderRadius: 8,
@@ -146,9 +147,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 8,
+    color: '#fff',
   },
   todoTime: {
-    color: '#666',
+    color: '#ccc',
     fontSize: 14,
   },
   todoStatus: {

@@ -53,13 +53,13 @@ const OverviewScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'transparent',
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 16,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(0, 0, 51, 0.7)',
     elevation: 2,
   },
   filterButton: {
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   todoItem: {
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(0, 0, 51, 0.7)',
     padding: 16,
     marginVertical: 4,
     marginHorizontal: 16,
@@ -91,9 +91,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 8,
+    color: '#fff',
   },
   todoTime: {
-    color: '#666',
+    color: '#ccc',
     fontSize: 14,
   },
   todoStatus: {
